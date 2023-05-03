@@ -1,0 +1,12 @@
+[versions]
+java = "17"
+springBoot = { strictly = "[3.0, 4.0[" }
+
+[libraries]
+spring-boot = { module = "org.springframework.boot:spring-boot-dependencies", version.ref = "springBoot" }
+
+[bundles]
+
+
+[plugins]
+spring-boot = { id = "org.springframework.boot", version.ref = "springBoot" }
