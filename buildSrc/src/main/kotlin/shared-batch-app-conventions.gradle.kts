@@ -1,7 +1,7 @@
 val versionCatalog = extensions.getByType<VersionCatalogsExtension>().named("libs")
 
 plugins {
-    `java-library`
+   java
     groovy
 }
 
@@ -18,8 +18,8 @@ repositories {
 
 dependencies {
     implementation(platform(versionCatalog.findLibrary("spring-boot").get()))
+    implementation(project(":spring-batch-library"))
 
-    api("org.springframework.boot:spring-boot-starter-batch")
 
     compileOnly("org.projectlombok:lombok")
 
@@ -29,6 +29,7 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.springframework.batch:spring-batch-test")
     testImplementation(versionCatalog.findLibrary("spock-spring").get())
+    testImplementation("com.h2database:h2")
 }
 
 tasks.withType<Test> {
