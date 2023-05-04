@@ -8,3 +8,5 @@
  */
 
 rootProject.name = "gradle-spring-boot"
+
+include("spring-batch-library")

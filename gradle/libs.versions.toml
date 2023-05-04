@@ -1,9 +1,11 @@
 [versions]
 java = "17"
-springBoot = { strictly = "[3.0, 4.0[" }
+springBoot = { strictly = "[3.0.6, 4.0[" }
+spockSpring = "2.4-M1-groovy-4.0"
 
 [libraries]
 spring-boot = { module = "org.springframework.boot:spring-boot-dependencies", version.ref = "springBoot" }
+spock-spring = { module = "org.spockframework:spock-spring", version.ref = "spockSpring" }
 
 [bundles]
 
