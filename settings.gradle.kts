@@ -7,6 +7,10 @@
  * in the user manual at https://docs.gradle.org/8.1.1/userguide/multi_project_builds.html
  */
 
+plugins {
+    id("org.gradle.toolchains.foojay-resolver-convention") version "0.5.0"
+}
+
 rootProject.name = "gradle-spring-boot"
 
 include("spring-batch-library")
