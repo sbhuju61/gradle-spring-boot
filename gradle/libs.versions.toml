@@ -1,5 +1,5 @@
 [versions]
-java = "17"
+java = "20"
 springBoot = { strictly = "[3.0.6, 4.0[" }
 spockSpring = "2.4-M1-groovy-4.0"
 
